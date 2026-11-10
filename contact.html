@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Classora School Management Software</title>
+  <meta name="description" content="Request a demo or ask a question about Classora school management software.">
+  <script>
+    (function () {
+      try {
+        var d = document.documentElement;
+        d.setAttribute('data-theme', localStorage.getItem('cl-theme') || 'light');
+        d.setAttribute('dir', localStorage.getItem('cl-dir') || 'ltr');
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%231d4ed8%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-page="contact" data-layout="public">
+  <div id="site-header"></div>
+
+  <main>
+    <!-- 1. Hero -->
+    <section class="page-hero" style="background-image:url('assets/images/hero-contact.jpg')" aria-labelledby="ct-hero">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1 id="ct-hero">Let&rsquo;s talk about your school</h1>
+        <p>Request a demo or ask us anything about Classora. We are happy to help.</p>
+      </div>
+    </section>
+
+    <!-- 2. Contact details -->
+    <section class="section" aria-labelledby="ct-info">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Get in touch</span>
+          <h2 id="ct-info">Ways to reach us</h2>
+          <p>Our support and sales teams are available on weekdays. Pick whichever channel suits you best.</p>
+        </div>
+        <div class="contact-panel"><div class="contact-row"><span class="card-icon" data-icon="mail"></span><div><h3>Email</h3><p>hello@classora.com</p></div></div><div class="contact-row"><span class="card-icon" data-icon="phone"></span><div><h3>Phone</h3><p>+91 80 4000 1234</p></div></div><div class="contact-row"><span class="card-icon" data-icon="pin"></span><div><h3>Address</h3><p>Orchid Tech Park, 100 Feet Road, Indiranagar, Bengaluru 560038, India</p></div></div><div class="contact-row"><span class="card-icon" data-icon="calendar"></span><div><h3>Business hours</h3><p>Mon&ndash;Sat, 9:00 AM&ndash;6:00 PM IST</p></div></div></div>
+      </div>
+    </section>
+
+    <!-- 3. Form -->
+    <section class="section section--soft" aria-labelledby="ct-form">
+      <div class="container contact-grid">
+        <div class="form-card">
+          <h2 id="ct-form">Request a demo</h2>
+          <p>Fill in the form and tell us a little about your school.</p>
+          <form data-form novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="f-name">Full name <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+                <span class="field-error" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="f-email">Email <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@school.org" required>
+                <span class="field-error" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="f-school">School name <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-school" name="school" type="text" autocomplete="organization" placeholder="Your school" required>
+                <span class="field-error" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="f-phone">Phone</label>
+                <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="Optional">
+                <span class="field-error" role="alert"></span>
+              </div>
+              <div class="field field--full">
+                <label for="f-role">Your role <span class="req" aria-hidden="true">*</span></label>
+                <select id="f-role" name="role" required>
+                  <option value="">Select your role</option>
+                  <option>Principal / Head</option>
+                  <option>School administrator</option>
+                  <option>Teacher</option>
+                  <option>Other</option>
+                </select>
+                <span class="field-error" role="alert"></span>
+              </div>
+              <div class="field field--full">
+                <label for="f-msg">Message <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="f-msg" name="message" placeholder="Tell us what you would like to see" required></textarea>
+                <span class="field-error" role="alert"></span>
+              </div>
+            </div>
+            <div class="form-actions"><button type="submit" class="btn btn-primary btn-lg">Send request</button></div>
+            <div class="form-status" role="status" aria-live="polite" hidden></div>
+            <p class="form-note">We reply within one business day. Your details are used only to respond to your request.</p>
+          </form>
+        </div>
+        <aside class="aside-card">
+          <img src="assets/images/contact-what-to-expect.jpg" width="768" height="583" alt="Classora team member on video call offering dashboard walkthrough" loading="lazy">
+          <div class="aside-body">
+            <h3>What to expect</h3>
+            <p>We read every request and reply with suggested times for a short walkthrough of the dashboard.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 4. Map -->
+    <section class="section" aria-labelledby="ct-map">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Location</span>
+          <h2 id="ct-map">Find us</h2>
+        </div>
+        <div class="map-wrap map-wrap--full">
+          <iframe class="map-frame" title="Classora office on Google Maps" src="https://www.google.com/maps?q=Indiranagar,+Bengaluru&amp;output=embed" width="1200" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="map-info">
+            <h3>Classora Technologies</h3>
+            <p>4th Floor, Orchid Tech Park<br>100 Feet Road, Indiranagar<br>Bengaluru 560038, India</p>
+            <p><strong>Hours:</strong> Mon&ndash;Sat, 9:00 AM&ndash;6:00 PM IST</p>
+            <p><strong>Phone:</strong> +91 80 4000 1234</p>
+            <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=Indiranagar,+Bengaluru" target="_blank" rel="noopener">Get directions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. What happens next -->
+    <section class="section section--soft" aria-labelledby="ct-next">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">What happens next</span>
+          <h2 id="ct-next">Three steps after you contact us</h2>
+        </div>
+        <div class="line-steps"><div class="line-step"><span class="step-num">1</span><h3>We review your request</h3><p>We look at what your school needs and prepare for the conversation.</p></div><div class="line-step"><span class="step-num">2</span><h3>We reach out</h3><p>You hear back with suggested times for a short walkthrough.</p></div><div class="line-step"><span class="step-num">3</span><h3>You see the dashboard</h3><p>We show the modules that matter most to your school.</p></div></div>
+        <div class="faq" style="margin-top:40px">
+          <details>
+            <summary>How long does setup take? <span data-icon="chev"></span></summary>
+            <p>Most schools are ready within a week once we have their class and student lists.</p>
+          </details>
+          <details>
+            <summary>Can you visit our school? <span data-icon="chev"></span></summary>
+            <p>For schools in and around Bengaluru we can arrange an on-site walkthrough. Others can join a video call.</p>
+          </details>
+          <details>
+            <summary>Who do I contact for support? <span data-icon="chev"></span></summary>
+            <p>Email hello@classora.com or call +91 80 4000 1234, Monday to Saturday, 9:00 AM to 6:00 PM IST.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

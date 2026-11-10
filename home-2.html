@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Classora — A Calmer Way to Run Your School</title>
+  <meta name="description" content="One dashboard for attendance, fees, timetables and parent communication, designed for school administrators.">
+  <script>
+    (function () {
+      try {
+        var d = document.documentElement;
+        d.setAttribute('data-theme', localStorage.getItem('cl-theme') || 'light');
+        d.setAttribute('dir', localStorage.getItem('cl-dir') || 'ltr');
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%231d4ed8%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-page="home2" data-layout="public">
+  <div id="site-header"></div>
+
+  <main>
+    <!-- 1. Hero (full-bleed, centered) with feature strip -->
+    <section class="hero-2" style="background-image:url('assets/images/hero-home-2.jpg')" aria-labelledby="h2-hero">
+      <div class="container">
+        <span class="eyebrow">For school administrators</span>
+        <h1 id="h2-hero">A calmer way to run your school</h1>
+        <p class="lead">Attendance, fees, timetables and parent updates, finally in one place. Spend less time chasing paperwork and more time on students.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light btn-lg" href="contact.html">Request a Demo</a>
+          <a class="btn btn-ghost-light btn-lg" href="features.html">See all features</a>
+        </div>
+        <div class="hero-strip">
+          <div class="strip">
+            <div class="strip-item"><span class="card-icon" data-icon="userCheck"></span><div><h3>Attendance</h3><p>Mark and review class attendance.</p></div></div>
+            <div class="strip-item"><span class="card-icon" data-icon="wallet"></span><div><h3>Fees</h3><p>Know what is paid and what is due.</p></div></div>
+            <div class="strip-item"><span class="card-icon" data-icon="chat"></span><div><h3>Parent updates</h3><p>Reach families from one system.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Bento modules -->
+    <section class="section" aria-labelledby="h2-modules">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Modules</span>
+          <h2 id="h2-modules">Everything the school office needs</h2>
+        </div>
+        <div class="bento">
+          <article class="tile tile--a">
+            <span class="card-icon" data-icon="userCheck"></span>
+            <h3>Attendance</h3>
+            <p>Teachers record attendance for each class, and admins see absences across the school without collecting registers.</p>
+            <div class="photo"><img src="assets/images/attendance-teacher-tablet.jpg" width="1024" height="778" alt="Teacher recording class attendance on digital tablet" loading="lazy"></div>
+          </article>
+          <article class="tile tile--b">
+            <span class="card-icon" data-icon="wallet"></span>
+            <h3>Fees</h3>
+            <p>Track fee status per student and spot pending dues quickly.</p>
+          </article>
+          <article class="tile tile--c">
+            <span class="card-icon" data-icon="calendar"></span>
+            <h3>Timetables</h3>
+            <p>Plan weekly schedules and adjust them when plans change.</p>
+          </article>
+          <article class="tile tile--d">
+            <span class="card-icon" data-icon="chat"></span>
+            <h3>Parent communication</h3>
+            <p>Send announcements and reminders so families stay informed without phone calls and printed notes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Dashboard preview -->
+    <section class="section section--soft" aria-labelledby="h2-dash">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Dashboard preview</span>
+          <h2 id="h2-dash">See your school at a glance</h2>
+          <p>Attendance, fee collection and communication, summarised on one screen for the principal and office team.</p>
+        </div>
+        <div class="mock" role="img" aria-label="Preview of the school admin dashboard showing summary tiles and class attendance rows">
+          <div class="mock-bar"><i></i><i></i><i></i><span>Classora &middot; Admin</span></div>
+          <div class="mock-body">
+            <div class="mock-side"><b class="on">Overview</b><b>Attendance</b><b>Fees</b><b>Timetable</b><b>Messages</b></div>
+            <div class="mock-main">
+              <div class="mock-tiles">
+                <div class="mock-tile"><small>Attendance today</small><strong>94%</strong></div>
+                <div class="mock-tile"><small>Fees collected</small><strong>78%</strong></div>
+                <div class="mock-tile"><small>Notices sent</small><strong>12</strong></div>
+              </div>
+              <div class="mock-rows">
+                <div class="mock-row"><span>Class 6A</span><div class="meter"><i style="width:96%"></i></div><em>96%</em></div>
+                <div class="mock-row"><span>Class 7B</span><div class="meter"><i style="width:91%"></i></div><em>91%</em></div>
+                <div class="mock-row"><span>Class 8C</span><div class="meter"><i style="width:88%"></i></div><em>88%</em></div>
+                <div class="mock-row"><span>Class 9A</span><div class="meter"><i style="width:94%"></i></div><em>94%</em></div>
+                <div class="mock-row"><span>Class 10B</span><div class="meter"><i style="width:97%"></i></div><em>97%</em></div>
+                <div class="mock-row"><span>Class 11 Science</span><div class="meter"><i style="width:92%"></i></div><em>92%</em></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Roles -->
+    <section class="section" aria-labelledby="h2-roles">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Built for everyone</span>
+          <h2 id="h2-roles">One system, three kinds of people</h2>
+        </div>
+        <div class="role-rows"><div class="role-line"><img src="assets/images/role-admin-dashboard.jpg" width="440" height="293" alt="School administrator reviewing analytics on dashboard" loading="lazy"><div><h3>School admins</h3><p>Oversee attendance, fees and schedules from one dashboard, with reports ready for management reviews.</p></div><span class="tagline">Dashboard &amp; reports</span></div><div class="role-line"><img src="assets/images/role-teacher-tablet.jpg" width="440" height="293" alt="Teacher taking attendance and managing lessons with tablet" loading="lazy"><div><h3>Teachers</h3><p>Take attendance in seconds, see class schedules and share notes without extra paperwork.</p></div><span class="tagline">Attendance &amp; schedules</span></div><div class="role-line"><img src="assets/images/role-parent-mobile.jpg" width="440" height="293" alt="Mother and student checking school notices on smartphone" loading="lazy"><div><h3>Parents</h3><p>Receive clear updates, fee reminders and meeting notices about school life.</p></div><span class="tagline">Updates &amp; reminders</span></div></div>
+      </div>
+    </section>
+
+    <!-- 5. A day with Classora (timeline) -->
+    <section class="section section--soft" aria-labelledby="h2-day">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">A day with Classora</span>
+          <h2 id="h2-day">From first bell to final notice</h2>
+        </div>
+        <div class="timeline">
+          <div class="t-item"><span class="t-dot"></span><div class="t-card"><span class="t-time">Morning</span><h3>Attendance is marked</h3><p>Teachers record who is present, and the office sees the totals instantly.</p></div></div>
+          <div class="t-item"><span class="t-dot"></span><div class="t-card"><span class="t-time">Mid-morning</span><h3>Schedules stay on track</h3><p>Timetable changes are made once and visible to everyone affected.</p></div></div>
+          <div class="t-item"><span class="t-dot"></span><div class="t-card"><span class="t-time">Midday</span><h3>Absences are followed up</h3><p>Parents of absent students are notified without manual calls.</p></div></div>
+          <div class="t-item"><span class="t-dot"></span><div class="t-card"><span class="t-time">Afternoon</span><h3>Fees are updated</h3><p>Payments are recorded against each student so dues are always current.</p></div></div>
+          <div class="t-item"><span class="t-dot"></span><div class="t-card"><span class="t-time">Late afternoon</span><h3>Reports are ready</h3><p>The principal reviews attendance and fee summaries before leaving.</p></div></div>
+          <div class="t-item"><span class="t-dot"></span><div class="t-card"><span class="t-time">Evening</span><h3>Parents are informed</h3><p>Announcements and reminders go out from the same system.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Comparison -->
+    <section class="section" aria-labelledby="h2-compare">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why switch</span>
+          <h2 id="h2-compare">Spreadsheets and paper vs Classora</h2>
+        </div>
+        <div class="compare">
+          <div class="panel panel--old">
+            <h3>The old way</h3>
+            <ul>
+              <li><span data-icon="close"></span> Attendance in paper registers</li>
+              <li><span data-icon="close"></span> Fee records in separate files</li>
+              <li><span data-icon="close"></span> Timetables edited by hand</li>
+              <li><span data-icon="close"></span> Parents reached by phone calls</li>
+              <li><span data-icon="close"></span> Reports compiled by hand each month</li>
+            </ul>
+          </div>
+          <div class="panel panel--pro">
+            <h3>With Classora</h3>
+            <ul>
+              <li><span data-icon="check"></span> Attendance recorded digitally</li>
+              <li><span data-icon="check"></span> Fees tracked per student</li>
+              <li><span data-icon="check"></span> Timetables planned in one place</li>
+              <li><span data-icon="check"></span> Announcements sent in one step</li>
+              <li><span data-icon="check"></span> Reports available whenever you need them</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Closing band -->
+    <section class="close-band" aria-labelledby="h2-close">
+      <div class="container close-grid">
+        <div>
+          <h2 id="h2-close">Let&rsquo;s set up your school</h2>
+          <p>Request a demo and we will show you the dashboard with your own workflow in mind.</p>
+        </div>
+        <div class="close-panel">
+          <ul>
+            <li><span data-icon="check"></span> Guided walkthrough of every module</li>
+            <li><span data-icon="check"></span> Questions answered by our team</li>
+            <li><span data-icon="check"></span> No commitment to start</li>
+          </ul>
+          <div class="cta-actions">
+            <a class="btn btn-light btn-lg" href="contact.html">Request a Demo</a>
+            <a class="btn btn-ghost-light btn-lg" href="pricing.html">View Pricing</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

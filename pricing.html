@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing — Classora School Management Software</title>
+  <meta name="description" content="Simple plans for schools of every size. Compare Starter, Standard and Campus.">
+  <script>
+    (function () {
+      try {
+        var d = document.documentElement;
+        d.setAttribute('data-theme', localStorage.getItem('cl-theme') || 'light');
+        d.setAttribute('dir', localStorage.getItem('cl-dir') || 'ltr');
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%231d4ed8%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-page="pricing" data-layout="public">
+  <div id="site-header"></div>
+
+  <main>
+    <!-- 1. Hero -->
+    <section class="page-hero" style="background-image:url('assets/images/hero-pricing.jpg')" aria-labelledby="pr-hero">
+      <div class="container">
+        <span class="eyebrow">Pricing</span>
+        <h1 id="pr-hero">Simple plans for every school</h1>
+        <p>Pick the plan that fits your school today and move up whenever you are ready.</p>
+      </div>
+    </section>
+
+    <!-- 2. Plans -->
+    <section class="section" aria-labelledby="pr-plans">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Plans</span>
+          <h2 id="pr-plans">Choose your plan</h2>
+          <p>Every plan includes the admin dashboard, onboarding support and free updates.</p>
+          <div class="billing" role="group" aria-label="Billing period">
+            <button type="button" class="is-on" data-billing="monthly" aria-pressed="true">Monthly</button>
+            <button type="button" data-billing="yearly" aria-pressed="false">Yearly <small>Save 20%</small></button>
+          </div>
+        </div>
+        <div class="grid grid-3">
+          <article class="price-card">
+            <h3>Starter</h3>
+            <p class="plan-desc">For small schools getting organised.</p>
+            <div class="price"><strong data-monthly="&#8377;3,999" data-yearly="&#8377;3,199">&#8377;3,999</strong><span>/ month</span></div>
+            <p class="price-note" data-monthly="Billed monthly" data-yearly="Billed yearly (&#8377;38,388)">Billed monthly</p>
+            <ul class="checklist">
+              <li><span data-icon="check"></span> Daily attendance</li>
+              <li><span data-icon="check"></span> Timetable planner</li>
+              <li><span data-icon="check"></span> Admin dashboard</li>
+              <li><span data-icon="check"></span> Up to 300 students</li>
+            </ul>
+            <a class="btn btn-outline" href="contact.html">Request a Demo</a>
+          </article>
+          <article class="price-card is-featured">
+            <span class="price-badge">Most popular</span>
+            <h3>Standard</h3>
+            <p class="plan-desc">For growing schools that collect fees and talk to parents.</p>
+            <div class="price"><strong data-monthly="&#8377;7,999" data-yearly="&#8377;6,399">&#8377;7,999</strong><span>/ month</span></div>
+            <p class="price-note" data-monthly="Billed monthly" data-yearly="Billed yearly (&#8377;76,788)">Billed monthly</p>
+            <ul class="checklist">
+              <li><span data-icon="check"></span> Everything in Starter</li>
+              <li><span data-icon="check"></span> Fee tracking</li>
+              <li><span data-icon="check"></span> Parent announcements</li>
+              <li><span data-icon="check"></span> Up to 1,500 students</li>
+            </ul>
+            <a class="btn btn-primary" href="contact.html">Request a Demo</a>
+          </article>
+          <article class="price-card">
+            <h3>Campus</h3>
+            <p class="plan-desc">For large schools and groups with several campuses.</p>
+            <div class="price"><strong>Custom</strong></div>
+            <p class="price-note">Tailored to your campuses</p>
+            <ul class="checklist">
+              <li><span data-icon="check"></span> Everything in Standard</li>
+              <li><span data-icon="check"></span> Fee reminders</li>
+              <li><span data-icon="check"></span> Priority support</li>
+              <li><span data-icon="check"></span> Unlimited students and campuses</li>
+            </ul>
+            <a class="btn btn-outline" href="contact.html">Request a Demo</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Compare plans -->
+    <section class="section section--soft" aria-labelledby="pr-compare">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Compare</span>
+          <h2 id="pr-compare">What each plan includes</h2>
+        </div>
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Plan comparison table">
+          <table class="compare-table">
+            <thead><tr><th scope="col">Feature</th><th scope="col">Starter</th><th scope="col">Standard</th><th scope="col">Campus</th></tr></thead>
+            <tbody>
+              <tr><td>Daily attendance</td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td></tr>
+              <tr><td>Timetable planner</td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td></tr>
+              <tr><td>Fee tracking</td><td><span class="no">&ndash;</span><span class="sr-only">Not included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td></tr>
+              <tr><td>Parent announcements</td><td><span class="no">&ndash;</span><span class="sr-only">Not included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td></tr>
+              <tr><td>Fee reminders</td><td><span class="no">&ndash;</span><span class="sr-only">Not included</span></td><td><span class="no">&ndash;</span><span class="sr-only">Not included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td></tr>
+              <tr><td>Priority support</td><td><span class="no">&ndash;</span><span class="sr-only">Not included</span></td><td><span class="no">&ndash;</span><span class="sr-only">Not included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td></tr>
+              <tr><td>Admin dashboard</td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td></tr>
+              <tr><td>Role-based staff access</td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td></tr>
+              <tr><td>Attendance reports</td><td><span class="no">&ndash;</span><span class="sr-only">Not included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td></tr>
+              <tr><td>Data import from spreadsheet</td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td></tr>
+              <tr><td>Multi-campus support</td><td><span class="no">&ndash;</span><span class="sr-only">Not included</span></td><td><span class="no">&ndash;</span><span class="sr-only">Not included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td></tr>
+              <tr><td>Onboarding and training</td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td><td><span class="yes" data-icon="check"></span><span class="sr-only">Included</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Included in every plan -->
+    <section class="section" aria-labelledby="pr-all">
+      <div class="container incl">
+        <div class="incl-media">
+          <img src="assets/images/pricing-included-plans.jpg" width="768" height="583" alt="Laptop and smartphone displaying Classora school administration dashboard" loading="lazy">
+          <div class="incl-badge"><b>14 days</b><span>free trial on every plan</span></div>
+        </div>
+        <div class="incl-body">
+          <span class="eyebrow">Every plan</span>
+          <h2 id="pr-all">Included with <em>all plans</em></h2>
+          <p>Whichever plan you choose, these essentials come with it.</p>
+          <ul class="incl-list">
+            <li><span class="incl-tick" data-icon="check"></span><div><strong>Admin dashboard</strong><span>A clear overview of your school in one place.</span></div></li>
+            <li><span class="incl-tick" data-icon="check"></span><div><strong>Light &amp; dark mode</strong><span>Comfortable viewing at any time of day.</span></div></li>
+            <li><span class="incl-tick" data-icon="check"></span><div><strong>LTR &amp; RTL layouts</strong><span>Layouts that mirror for right-to-left languages.</span></div></li>
+            <li><span class="incl-tick" data-icon="check"></span><div><strong>Any device</strong><span>Works on phones, tablets and desktop screens.</span></div></li>
+            <li><span class="incl-tick" data-icon="check"></span><div><strong>Onboarding help</strong><span>Guided setup and data import for your classes and students.</span></div></li>
+            <li><span class="incl-tick" data-icon="check"></span><div><strong>Secure records</strong><span>Role-based access to keep information with the right people.</span></div></li>
+            <li><span class="incl-tick" data-icon="check"></span><div><strong>Email &amp; phone support</strong><span>Reach our team Monday to Saturday, 9:00 AM to 6:00 PM IST.</span></div></li>
+            <li><span class="incl-tick" data-icon="check"></span><div><strong>Free updates</strong><span>New improvements arrive automatically at no extra cost.</span></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FAQ -->
+    <section class="section section--soft" aria-labelledby="pr-faq">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="pr-faq">Pricing questions</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Can I change plans later? <span data-icon="chev"></span></summary>
+            <p>Yes. Start with the plan that fits today and move to a larger one when your school needs more.</p>
+          </details>
+          <details>
+            <summary>Is there a way to try it first? <span data-icon="chev"></span></summary>
+            <p>Request a demo and we will walk you through the dashboard before you decide.</p>
+          </details>
+          <details>
+            <summary>How do I get a Campus quote? <span data-icon="chev"></span></summary>
+            <p>Contact us with a few details about your school and we will prepare a quote for you.</p>
+          </details>
+          <details>
+            <summary>What do the prices include? <span data-icon="chev"></span></summary>
+            <p>Prices on this page are per school per month and exclude applicable taxes. Contact us for multi-campus or trust pricing.</p>
+          </details>
+          <details>
+            <summary>Which payment methods do you accept? <span data-icon="chev"></span></summary>
+            <p>We accept UPI, net banking, cards and bank transfer. Yearly plans can be invoiced.</p>
+          </details>
+          <details>
+            <summary>Is there a setup fee? <span data-icon="chev"></span></summary>
+            <p>No. Onboarding and data import are included with every plan.</p>
+          </details>
+          <details>
+            <summary>What happens if we go over our student limit? <span data-icon="chev"></span></summary>
+            <p>We will contact you to move to the next plan. Nothing is switched off without notice.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CTA -->
+    <section class="section" aria-labelledby="pr-cta">
+      <div class="container">
+        <div class="cta-box" style="background-image:url('assets/images/cta-banner.jpg')">
+          <h2 id="pr-cta">Not sure which plan fits?</h2>
+          <p>Tell us about your school and we will recommend the right one.</p>
+          <div class="cta-actions">
+            <a class="btn btn-light btn-lg" href="contact.html">Request a Demo</a>
+            <a class="btn btn-ghost-light btn-lg" href="features.html">Explore Features</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

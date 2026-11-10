@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Classora — School Management Software</title>
+  <meta name="description" content="Manage attendance, fees, timetables and parent communication from one school admin dashboard.">
+  <script>
+    /* apply saved theme/direction before paint to avoid a flash */
+    (function () {
+      try {
+        var d = document.documentElement;
+        d.setAttribute('data-theme', localStorage.getItem('cl-theme') || 'light');
+        d.setAttribute('dir', localStorage.getItem('cl-dir') || 'ltr');
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%231d4ed8%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-page="home1" data-layout="public">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <!-- 1. Hero -->
+    <section class="hero-v2" aria-labelledby="h-hero">
+      <div class="container hero-v2-grid">
+        <div>
+          <span class="eyebrow">School management software</span>
+          <h1 id="h-hero">Your school office, <em>ready in 10 minutes.</em></h1>
+          <p class="lead">Mark attendance, track fees, plan timetables and message parents from one clean dashboard. No more registers, spreadsheets and chat groups.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="register.html">Start Free Trial</a>
+            <a class="btn btn-outline btn-lg" href="#how">See how it works</a>
+          </div>
+          <div class="hero-rating"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span><strong>4.8 / 5</strong> from 1,200+ school administrators</span></div>
+          <p class="hero-note" style="margin:8px 0 0;font-size:.9rem">14-day free trial &middot; No card needed</p>
+        </div>
+        <div class="hero-v2-visual">
+          <img src="assets/images/classroom-engaged.jpg" width="1400" height="1120" alt="Teacher and students in a modern classroom" fetchpriority="high">
+          <div class="week-strip" aria-hidden="true"><span>Mon</span><span>Tue</span><span class="on">Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+          <div class="shift-card shift-card--a"><span class="dot"></span><div><strong>Class 6A &middot; Attendance</strong><small>34 present &middot; 2 absent</small></div></div>
+          <div class="shift-card shift-card--b"><span class="dot dot--coral"></span><div><strong>Fee received</strong><small>&#8377;12,000 &middot; Rohan P.</small></div></div>
+          <div class="mini-stats"><div><b>312</b><small>Present today</small></div><div><b>3</b><small>Leave requests</small></div><div><b>&#8377;4.86L</b><small>Fees collected</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Trust bar -->
+    <section class="trust" aria-labelledby="h-trust">
+      <div class="container">
+        <p class="trust-top" id="h-trust"><strong>850+ schools</strong> run their day on Classora &middot; 4.8 average rating</p>
+        <ul class="trust-list">
+          <li><b>Greenfield Public</b><small>K-12 school</small></li>
+          <li><b>St. Mary&rsquo;s Academy</b><small>Day school</small></li>
+          <li><b>Lotus Montessori</b><small>Preschool</small></li>
+          <li><b>Vidya Mandir</b><small>CBSE school</small></li>
+          <li><b>Brightpath Tutorials</b><small>Coaching centre</small></li>
+          <li><b>Hillcrest Residential</b><small>Boarding school</small></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. Before / with -->
+    <section class="section section--soft" aria-labelledby="h-why">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why schools switch</span>
+          <h2 id="h-why">Paper registers cost your office <em>hours every day.</em></h2>
+        </div>
+        <div class="ba">
+          <article class="ba-card ba-card--old"><span class="ba-tag">Before</span><img src="assets/images/before-paperwork.jpg" width="1200" height="675" alt="Teacher seated at a desk marking class work" loading="lazy">
+            <div class="ba-body"><h3>Registers, spreadsheets and phone calls</h3><ul>
+              <li><span data-icon="close"></span> 2 to 3 hours to compile attendance each week</li>
+              <li><span data-icon="close"></span> Fee dues tracked in separate files</li>
+              <li><span data-icon="close"></span> Parents reached one call at a time</li>
+              <li><span data-icon="close"></span> No clear picture until month end</li></ul></div></article>
+          <article class="ba-card ba-card--new"><span class="ba-tag">With Classora</span><img src="assets/images/dashboard-devices-preview.jpg" width="1024" height="682" alt="Classora campus management dashboard on desktop monitor and mobile" loading="lazy">
+            <div class="ba-body"><h3>One dashboard everyone can trust</h3><ul>
+              <li><span data-icon="check"></span> Class attendance marked in under a minute</li>
+              <li><span data-icon="check"></span> Paid, pending and overdue fees at a glance</li>
+              <li><span data-icon="check"></span> Announcements reach every parent at once</li>
+              <li><span data-icon="check"></span> Live reports before the principal asks</li></ul></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Features -->
+    <section class="section" aria-labelledby="h-feat">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">What it does</span>
+          <h2 id="h-feat">Six jobs Classora does <em>for you.</em></h2>
+          <p>Everything the school office handles daily, organised in one place that teachers and parents can actually use.</p>
+        </div>
+        <div class="zig"><div class="zig-row"><div class="zig-ui" aria-hidden="true"><div class="ui-row"><span class="dot"></span>Class 6A<em>34 / 36</em></div><div class="ui-row"><span class="dot"></span>Class 7B<em>38 / 40</em></div><div class="ui-row"><span class="dot"></span>Class 8C<em>31 / 35</em></div></div><div class="zig-text"><span class="card-icon" data-icon="userCheck"></span><h3>Attendance in a minute</h3><p>Teachers mark a class in a few taps and the office sees totals instantly.</p></div></div><div class="zig-row"><div class="zig-ui" aria-hidden="true"><div class="ui-row"><span class="dot"></span>Rohan P.<em><span class="pill">Paid</span></em></div><div class="ui-row"><span class="dot"></span>Meera K.<em><span class="pill pill--warn">Pending</span></em></div><div class="ui-row"><span class="dot"></span>Isha R.<em><span class="pill pill--bad">Overdue</span></em></div></div><div class="zig-text"><span class="card-icon" data-icon="wallet"></span><h3>Fees without chasing</h3><p>See who has paid and who is late, then send reminders in one click.</p></div></div><div class="zig-row"><div class="zig-ui" aria-hidden="true"><div class="ui-row"><span class="dot"></span>Mon<em>Maths &middot; Room 4</em></div><div class="ui-row"><span class="dot"></span>Tue<em>Science &middot; Lab 1</em></div><div class="ui-row"><span class="dot"></span>Wed<em>English &middot; Room 2</em></div></div><div class="zig-text"><span class="card-icon" data-icon="calendar"></span><h3>Timetables that never clash</h3><p>Build weekly schedules and get a warning if a teacher or room is double-booked.</p></div></div><div class="zig-row"><div class="zig-ui" aria-hidden="true"><div class="ui-row"><span class="dot"></span>Parent meeting<em>12 Nov</em></div><div class="ui-row"><span class="dot"></span>Fee due date<em>15 Nov</em></div><div class="ui-row"><span class="dot"></span>Sports day<em>20 Nov</em></div></div><div class="zig-text"><span class="card-icon" data-icon="chat"></span><h3>Parent announcements</h3><p>Send notices to a class, a grade or the whole school from the same system.</p></div></div><div class="zig-row"><div class="zig-ui" aria-hidden="true"><div class="pin-box"><i>4</i><i>8</i><i>2</i><i>&middot;</i></div></div><div class="zig-text"><span class="card-icon" data-icon="shield"></span><h3>Staff attendance with a PIN</h3><p>Teachers check in with a personal PIN, so staff attendance is always accurate.</p></div></div><div class="zig-row"><div class="zig-ui" aria-hidden="true"><div class="ui-row"><span class="dot"></span>Attendance<em>96%</em></div><div class="ui-row"><span class="dot"></span>Fees collected<em>78%</em></div><div class="ui-row"><span class="dot"></span>Notices sent<em>12</em></div></div><div class="zig-text"><span class="card-icon" data-icon="chart"></span><h3>Reports in real time</h3><p>Weekly trends and fee summaries ready for every management meeting.</p></div></div></div>
+      </div>
+    </section>
+
+    <!-- 5. How it works -->
+    <section class="section section--soft" id="how" aria-labelledby="h-how">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">How it works</span>
+          <h2 id="h-how">Up and running <em>this week.</em></h2>
+        </div>
+        <div class="step2"><div><div class="step2-num">01</div><h3>Add your school</h3><p>Import classes, teachers, students and parent contacts from a spreadsheet. We help you load it during onboarding.</p><span class="step-time">About 5 min</span></div><img src="assets/images/step-01.jpg" width="1200" height="800" alt="Students facing their teacher in class" loading="lazy"></div>
+        <div class="step2 step2--rev"><div><div class="step2-num">02</div><h3>Set up your day</h3><p>Choose your periods, fee terms and holidays. Classora builds the timetable and fee calendar from them.</p><span class="step-time">About 3 min</span></div><img src="assets/images/step-02.jpg" width="1200" height="800" alt="Teacher with students in a modern classroom" loading="lazy"></div>
+        <div class="step2"><div><div class="step2-num">03</div><h3>Share with staff and parents</h3><p>Teachers start marking attendance, parents start receiving updates. You see everything on your dashboard.</p><span class="step-time">About 2 min</span></div><img src="assets/images/step-03.jpg" width="1200" height="800" alt="Teacher talking with pupils beside a school bench" loading="lazy"></div>
+        <p style="text-align:center;margin-top:12px"><a class="btn btn-outline" href="contact.html">Book a setup call</a></p>
+      </div>
+    </section>
+
+    <!-- 6. Savings calculator -->
+    <section class="calc-band" aria-labelledby="h-calc">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Savings calculator</span>
+          <h2 id="h-calc">See what Classora could save <em>your school.</em></h2>
+          <p>Adjust the numbers to match your school. The result updates as you type.</p>
+        </div>
+        <div class="calc" data-calc>
+          <div class="calc-left">
+            <h3>Your school</h3>
+            <p>Adjust the numbers to match your school.</p>
+            <div class="cf"><div class="cf-label"><label for="c-students">Number of students</label><small>50 to 5,000</small></div><div class="stepper"><button type="button" data-step="-1" data-for="students" aria-label="Decrease Number of students">&minus;</button><input id="c-students" data-in="students" data-inc="50" type="number" min="50" max="5000" value="600"><button type="button" data-step="1" data-for="students" aria-label="Increase Number of students">+</button></div></div>
+            <div class="cf"><div class="cf-label"><label for="c-fee">Monthly fee per student (&#8377;)</label><small>average, per month</small></div><div class="stepper"><button type="button" data-step="-1" data-for="fee" aria-label="Decrease Monthly fee per student (&#8377;)">&minus;</button><input id="c-fee" data-in="fee" data-inc="500" type="number" min="500" max="50000" value="3500"><button type="button" data-step="1" data-for="fee" aria-label="Increase Monthly fee per student (&#8377;)">+</button></div></div>
+            <div class="cf"><div class="cf-label"><label for="c-late">Fees paid late (%)</label><small>most schools: 15&ndash;30%</small></div><div class="stepper"><button type="button" data-step="-1" data-for="late" aria-label="Decrease Fees paid late (%)">&minus;</button><input id="c-late" data-in="late" data-inc="5" type="number" min="0" max="80" value="20"><button type="button" data-step="1" data-for="late" aria-label="Increase Fees paid late (%)">+</button></div></div>
+            <div class="cf"><div class="cf-label"><label for="c-hours">Admin hours a week</label><small>attendance, fees, notices</small></div><div class="stepper"><button type="button" data-step="-1" data-for="hours" aria-label="Decrease Admin hours a week">&minus;</button><input id="c-hours" data-in="hours" data-inc="2" type="number" min="1" max="120" value="24"><button type="button" data-step="1" data-for="hours" aria-label="Increase Admin hours a week">+</button></div></div>
+            <div class="cf"><div class="cf-label"><label for="c-rate">Staff cost per hour (&#8377;)</label><small>average, per hour</small></div><div class="stepper"><button type="button" data-step="-1" data-for="rate" aria-label="Decrease Staff cost per hour (&#8377;)">&minus;</button><input id="c-rate" data-in="rate" data-inc="25" type="number" min="50" max="2000" value="200"><button type="button" data-step="1" data-for="rate" aria-label="Increase Staff cost per hour (&#8377;)">+</button></div></div>
+          </div>
+          <div class="calc-right">
+            <span class="calc-kicker">You could gain</span>
+            <div class="big" data-out="net">&#8377;0</div>
+            <span class="calc-every">every month</span>
+            <div class="calc-bars">
+              <div><div class="bar-line"><span>Today</span><span data-out="today">&#8377;0</span></div><div class="bar-track2"><i class="old" data-bar="today" style="width:100%"></i></div></div>
+              <div><div class="bar-line"><span>With Classora</span><span data-out="with">&#8377;0</span></div><div class="bar-track2"><i class="new" data-bar="with" style="width:50%"></i></div></div>
+            </div>
+            <ul class="calc-lines">
+              <li>Admin time saved <b data-out="time">&#8377;0</b></li>
+              <li>Less printing and paperwork <b data-out="paper">&#8377;0</b></li>
+              <li>Late fees collected sooner <b data-out="cash">&#8377;0</b></li>
+              <li>Classora plan cost <b class="neg" data-out="plan">&#8377;0</b></li>
+              <li class="total">Net monthly gain <b data-out="net2">&#8377;0</b></li>
+            </ul>
+            <a class="btn btn-primary btn-lg" href="register.html">Try it free for 14 days</a>
+            <p class="calc-note">Estimate only. Your saving depends on how your office works today.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. School types -->
+    <section class="section" aria-labelledby="h-types">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Schools we serve</span>
+          <h2 id="h-types">Built for every kind of <em>school.</em></h2>
+        </div>
+        <div class="tabs" data-tabs><div class="tab-list" role="tablist" aria-label="School types"><button type="button" class="tab-btn" role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true" tabindex="0">Primary &amp; middle schools<span data-icon="chev" data-icon-class="tab-chev"></span></button><button type="button" class="tab-btn" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1">High schools &amp; K-12<span data-icon="chev" data-icon-class="tab-chev"></span></button><button type="button" class="tab-btn" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Preschools &amp; Montessori<span data-icon="chev" data-icon-class="tab-chev"></span></button><button type="button" class="tab-btn" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1">Coaching centres<span data-icon="chev" data-icon-class="tab-chev"></span></button><button type="button" class="tab-btn" role="tab" id="tab-4" aria-controls="panel-4" aria-selected="false" tabindex="-1">Colleges &amp; institutes<span data-icon="chev" data-icon-class="tab-chev"></span></button><button type="button" class="tab-btn" role="tab" id="tab-5" aria-controls="panel-5" aria-selected="false" tabindex="-1">Boarding schools<span data-icon="chev" data-icon-class="tab-chev"></span></button></div><div><div class="tab-panel" role="tabpanel" id="panel-0" aria-labelledby="tab-0"><img src="assets/images/tab-primary.jpg" width="900" height="675" alt="Teacher instructing a group of primary school pupils" loading="lazy"><div><h3>Primary &amp; middle schools</h3><p>Simple attendance, fee terms and parent updates for younger grades.</p><ul class="checklist"><li><span data-icon="check"></span> Class-wise daily attendance</li><li><span data-icon="check"></span> Term-wise fee calendar</li><li><span data-icon="check"></span> Parent notes and notices</li></ul><a class="btn btn-outline" href="contact.html">Talk to us</a></div></div><div class="tab-panel" role="tabpanel" id="panel-1" aria-labelledby="tab-1" hidden><img src="assets/images/tab-highschool.jpg" width="900" height="675" alt="High school students in uniform attending a lecture" loading="lazy"><div><h3>High schools &amp; K-12</h3><p>Multi-grade timetables, exams and staff workloads in one view.</p><ul class="checklist"><li><span data-icon="check"></span> Clash-free timetables</li><li><span data-icon="check"></span> Section-wise reports</li><li><span data-icon="check"></span> Role-based staff access</li></ul><a class="btn btn-outline" href="contact.html">Talk to us</a></div></div><div class="tab-panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden><img src="assets/images/tab-preschool.jpg" width="900" height="675" alt="Preschool children and teachers in a classroom" loading="lazy"><div><h3>Preschools &amp; Montessori</h3><p>Daily check-in, pick-up notes and fee tracking for small centres.</p><ul class="checklist"><li><span data-icon="check"></span> Daily check-in and out</li><li><span data-icon="check"></span> Guardian pick-up notes</li><li><span data-icon="check"></span> Monthly fee reminders</li></ul><a class="btn btn-outline" href="contact.html">Talk to us</a></div></div><div class="tab-panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" hidden><img src="assets/images/tab-coaching.jpg" width="900" height="675" alt="Students concentrating during an exam" loading="lazy"><div><h3>Coaching centres</h3><p>Batch timetables, monthly fees and quick WhatsApp-style notices.</p><ul class="checklist"><li><span data-icon="check"></span> Batch timetables</li><li><span data-icon="check"></span> Monthly fee tracking</li><li><span data-icon="check"></span> Batch-wise notices</li></ul><a class="btn btn-outline" href="contact.html">Talk to us</a></div></div><div class="tab-panel" role="tabpanel" id="panel-4" aria-labelledby="tab-4" hidden><img src="assets/images/tab-college.jpg" width="900" height="675" alt="University students with a professor using technology" loading="lazy"><div><h3>Colleges &amp; institutes</h3><p>Department-wise attendance and fee schedules for larger campuses.</p><ul class="checklist"><li><span data-icon="check"></span> Department-wise attendance</li><li><span data-icon="check"></span> Semester fee schedules</li><li><span data-icon="check"></span> Campus-wide notices</li></ul><a class="btn btn-outline" href="contact.html">Talk to us</a></div></div><div class="tab-panel" role="tabpanel" id="panel-5" aria-labelledby="tab-5" hidden><img src="assets/images/tab-boarding.jpg" width="900" height="675" alt="Students with their bags in a classroom" loading="lazy"><div><h3>Boarding schools</h3><p>Hostel attendance, leave approvals and guardian communication.</p><ul class="checklist"><li><span data-icon="check"></span> Hostel attendance</li><li><span data-icon="check"></span> Leave approvals</li><li><span data-icon="check"></span> Guardian communication</li></ul><a class="btn btn-outline" href="contact.html">Talk to us</a></div></div></div></div>
+      </div>
+    </section>
+
+    <!-- 8. Stories -->
+    <section class="section section--soft" aria-labelledby="h-stories">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Customer stories</span>
+          <h2 id="h-stories">Administrators who <em>switched.</em></h2>
+        </div>
+        <div class="story-layout"><article class="quote quote--big"><img class="quote-photo" src="assets/images/testimonial-principal.jpg" width="576" height="576" alt="Anita Rao, Principal, Greenfield Public School" loading="lazy"><div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>&ldquo;We used to spend Monday mornings building the weekly attendance sheet. Now it is ready before assembly.&rdquo;</blockquote><div class="quote-metrics"><div><b>4 hrs &rarr; 15 min</b><small>Weekly reporting</small></div></div><div class="quote-by"><span class="avatar" aria-hidden="true">AR</span><div><strong>Anita Rao</strong><small>Principal, Greenfield Public School</small></div></div></article><div class="story-stack"><article class="quote"><div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>&ldquo;Fee reminders go out automatically, and the pending list is always up to date. Parents actually respond now.&rdquo;</blockquote><div class="quote-metrics"><div><b>-22%</b><small>Late fees</small></div><div><b>+31%</b><small>On-time payments</small></div></div><div class="quote-by"><span class="avatar" aria-hidden="true">SM</span><div><strong>Suresh Menon</strong><small>Administrator, St. Mary&rsquo;s Academy</small></div></div></article><article class="quote"><div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>&ldquo;Teachers learned it in one afternoon. The timetable clash warnings alone saved us a lot of confusion.&rdquo;</blockquote><div class="quote-by"><span class="avatar" aria-hidden="true">FK</span><div><strong>Farah Khan</strong><small>Coordinator, Hillcrest Residential</small></div></div></article></div></div>
+      </div>
+    </section>
+
+    <!-- 9. FAQ -->
+    <section class="section" id="faq" aria-labelledby="h-faq">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="h-faq">What administrators ask <em>before they switch.</em></h2>
+        </div>
+        <div class="faq-wrap faq-wrap--single">
+          <div class="faq">
+          <details>
+            <summary>How long does setup take? <span data-icon="chev"></span></summary>
+            <p>Most schools are ready within a week. Importing students from a spreadsheet takes minutes, and our team helps with the rest.</p>
+          </details>
+          <details>
+            <summary>Do teachers and parents need their own accounts? <span data-icon="chev"></span></summary>
+            <p>Teachers get a login to mark attendance and see timetables. Parents receive announcements and reminders by message and email.</p>
+          </details>
+          <details>
+            <summary>Can we manage more than one campus? <span data-icon="chev"></span></summary>
+            <p>Yes. The Campus plan supports several campuses with separate classes and shared reports.</p>
+          </details>
+          <details>
+            <summary>Does it support right-to-left languages? <span data-icon="chev"></span></summary>
+            <p>Yes. The interface mirrors for right-to-left languages and offers light and dark themes.</p>
+          </details>
+          <details>
+            <summary>Is our data safe? <span data-icon="chev"></span></summary>
+            <p>Student and fee records sit in one access-controlled system. Each staff member only sees what their role allows.</p>
+          </details>
+          <details>
+            <summary>What happens after the free trial? <span data-icon="chev"></span></summary>
+            <p>After 14 days you choose a plan, starting at &#8377;3,999 a month. Nothing is charged without your approval.</p>
+          </details>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Final CTA -->
+    <section class="section section--soft" aria-labelledby="h-cta">
+      <div class="container">
+        <div class="final-cta on-dark" style="background-image:url('assets/images/cta-banner.jpg')">
+          <h2 id="h-cta">Your next timetable could be ready <em>before lunch.</em></h2>
+          <p>Start your free trial today and see how much time your office gets back.</p>
+          <ul><li><span data-icon="check"></span> 14-day free trial</li><li><span data-icon="check"></span> No card needed</li><li><span data-icon="check"></span> Free onboarding</li></ul>
+          <div class="cta-actions"><a class="btn btn-light btn-lg" href="register.html">Start Free Trial</a><a class="btn btn-ghost-light btn-lg" href="contact.html">Book a demo</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

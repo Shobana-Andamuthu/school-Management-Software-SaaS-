@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Features — Classora School Management Software</title>
+  <meta name="description" content="Attendance, fees, timetables and parent communication in one school admin dashboard.">
+  <script>
+    (function () {
+      try {
+        var d = document.documentElement;
+        d.setAttribute('data-theme', localStorage.getItem('cl-theme') || 'light');
+        d.setAttribute('dir', localStorage.getItem('cl-dir') || 'ltr');
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%231d4ed8%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-page="features" data-layout="public">
+  <div id="site-header"></div>
+
+  <main>
+    <!-- 1. Hero -->
+    <section class="page-hero" style="background-image:url('assets/images/hero-features.jpg')" aria-labelledby="ft-hero">
+      <div class="container">
+        <span class="eyebrow">Features</span>
+        <h1 id="ft-hero">Everything your school office needs</h1>
+        <p>Attendance, fees, timetables and parent communication, working together in one clear dashboard.</p>
+      </div>
+    </section>
+
+    <!-- 2. Core features -->
+    <section class="section" aria-labelledby="ft-core">
+      <div class="container">
+        <div class="feature-panel">
+          <div class="fp-media">
+            <img src="assets/images/features-six-tools.jpg" width="768" height="583" alt="School administrative team reviewing dashboard analytics and timetables" loading="lazy">
+            <div class="phone" aria-hidden="true">
+              <i class="phone-bar"></i>
+              <small>Good morning,</small><b>Mrs. Nair</b>
+              <div class="phone-hero"><small>Next class &middot; Today</small><strong>09:00 &ndash; 09:45</strong><small>Class 6A &middot; Maths</small></div>
+              <div class="phone-row"><span>Class 6A</span><em>34 / 36</em></div>
+              <div class="phone-row"><span>Class 7B</span><em>38 / 40</em></div>
+              <div class="phone-row"><span>Class 8C</span><em>Not marked</em></div>
+              <div class="phone-btns"><span>Leave</span><span class="on">Mark attendance</span></div>
+            </div>
+          </div>
+          <div class="fp-body">
+            <span class="eyebrow eyebrow--dark">Core tools</span>
+            <h2 id="ft-core">Six tools that cover <em>the school day</em></h2>
+            <p>From the first bell to the last notice home, each module removes a manual task.</p>
+            <div class="fp-tiles">
+              <div class="fp-tile"><span class="fp-icon" data-icon="userCheck"></span><h3>Daily attendance</h3><p>Record attendance for each class and review it any time from the admin dashboard.</p></div>
+              <div class="fp-tile"><span class="fp-icon" data-icon="chart"></span><h3>Absence overview</h3><p>See absences across classes at a glance so follow-ups are never missed.</p></div>
+              <div class="fp-tile"><span class="fp-icon" data-icon="wallet"></span><h3>Fee tracking</h3><p>Keep a clear record of paid and pending fees for every student.</p></div>
+              <div class="fp-tile"><span class="fp-icon" data-icon="calendar"></span><h3>Timetable planner</h3><p>Build weekly schedules and adjust them quickly when plans change.</p></div>
+              <div class="fp-tile"><span class="fp-icon" data-icon="chat"></span><h3>Parent announcements</h3><p>Share notices and news with parents from the same system that holds your records.</p></div>
+              <div class="fp-tile"><span class="fp-icon" data-icon="shield"></span><h3>Fee reminders</h3><p>Send gentle reminders about pending fees without chasing families one by one.</p></div>
+            </div>
+            <h3 class="fp-sub">Works the way you do</h3>
+            <ul class="chips"><li>Phone, tablet and desktop</li><li>Light and dark theme</li><li>LTR and RTL</li><li>Role-based access</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Attendance and timetables -->
+    <section class="section section--soft" aria-labelledby="ft-att">
+      <div class="container split">
+        <div class="copy-block">
+          <span class="eyebrow">Attendance &amp; timetables</span>
+          <h2 id="ft-att">Keep every class on track</h2>
+          <p>Teachers take attendance in a few taps, and administrators can see how each class is doing without collecting paper registers.</p>
+          <ul class="checklist">
+            <li><span data-icon="check"></span> Class-wise daily attendance</li>
+            <li><span data-icon="check"></span> Absence summaries for admins</li>
+            <li><span data-icon="check"></span> Weekly timetable planning</li>
+            <li><span data-icon="check"></span> Room and teacher clash warnings</li>
+          </ul>
+        </div>
+        <img class="photo" src="assets/images/features-attendance-track.jpg" width="768" height="583" alt="Teacher taking daily class attendance on tablet in front of students" loading="lazy">
+      </div>
+    </section>
+
+    <!-- 4. Fees and communication -->
+    <section class="section" aria-labelledby="ft-fee">
+      <div class="container split split--rev">
+        <div class="copy-block">
+          <span class="eyebrow">Fees &amp; communication</span>
+          <h2 id="ft-fee">Stay on top of fees and keep parents informed</h2>
+          <p>Know exactly where fee collection stands, and reach parents with announcements and reminders from the same place.</p>
+          <ul class="checklist">
+            <li><span data-icon="check"></span> Paid and pending fee status per student</li>
+            <li><span data-icon="check"></span> Announcements to parents</li>
+            <li><span data-icon="check"></span> Reminders sent from one system</li>
+            <li><span data-icon="check"></span> Term-wise collection summaries</li>
+          </ul>
+        </div>
+        <img class="photo" src="assets/images/features-fees-parents.jpg" width="768" height="583" alt="School receptionist at desk showing fee and student records on laptop to parent" loading="lazy">
+      </div>
+    </section>
+
+    <!-- 5. Platform -->
+    <section class="band-dark" aria-labelledby="ft-plat">
+      <div class="container band-split">
+        <div class="band-copy">
+          <span class="eyebrow eyebrow--dark">Every day</span>
+          <h2 id="ft-plat">A school day, <em>planned in one view</em></h2>
+          <p>Classora lays the day out clearly, so teachers, office staff and parents all work from the same plan.</p>
+          <div class="day-card">
+            <div class="day-bar" aria-hidden="true"><i style="flex:1.2;background:#2563eb">Assembly</i><i style="flex:4;background:#1d4ed8">Classes</i><i style="flex:1;background:#c2410c">Break</i><i style="flex:3;background:#1d4ed8">Classes</i><i style="flex:1.2;background:#2563eb">Clubs</i></div>
+            <div class="day-scale" aria-hidden="true"><span>08:00</span><span>10:00</span><span>12:00</span><span>14:00</span><span>16:00</span></div>
+            <ul class="day-legend"><li><span class="dot"></span><b>Morning</b> 08:00 &ndash; 12:00</li><li><span class="dot dot--coral"></span><b>Break</b> 11:00 &ndash; 11:30</li><li><span class="dot dot--blue"></span><b>Afternoon</b> 12:30 &ndash; 16:00</li></ul>
+          </div>
+          <ul class="chips chips--dark">
+            <li>Clean dashboard</li>
+            <li>Light &amp; dark</li>
+            <li>LTR &amp; RTL</li>
+            <li>Any device</li>
+            <li>Role-based access</li>
+            <li>Reports</li>
+            <li>Staff &amp; students</li>
+            <li>Friendly support</li>
+          </ul>
+        </div>
+        <img class="band-photo" src="assets/images/features-school-day-view.jpg" width="768" height="583" alt="Teacher using digital tablet to coordinate classroom daily schedule" loading="lazy">
+      </div>
+    </section>
+
+    <!-- 6. CTA -->
+    <section class="section" aria-labelledby="ft-cta">
+      <div class="container">
+        <div class="cta-box" style="background-image:url('assets/images/cta-banner.jpg')">
+          <h2 id="ft-cta">Want to see these features working together?</h2>
+          <p>Request a demo and we will show you the dashboard.</p>
+          <div class="cta-actions">
+            <a class="btn btn-light btn-lg" href="contact.html">Request a Demo</a>
+            <a class="btn btn-ghost-light btn-lg" href="pricing.html">View Pricing</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

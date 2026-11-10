@@ -1,0 +1,134 @@
+/* =========================================================
+   Responsive rules
+   "Tablet mode" = widths <= 1199px, OR touch devices up to 1366px
+   (covers iPad / iPad Pro 12.9" in both orientations).
+   In tablet mode: hamburger nav, max 2 cards per row.
+   ========================================================= */
+
+/* ---------- Tablet mode (hamburger + 2 cards max) ---------- */
+@media (max-width: 1199px), (hover: none) and (pointer: coarse) and (max-width: 1366px) {
+  .nav-links, .nav-actions .btn, .nav-actions .icon-btn:not(.nav-toggle) { display: none; }
+  .nav-actions .nav-toggle { display: inline-flex; }
+  .nav-actions { margin-inline-start: auto; }
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .split, .hero-grid { grid-template-columns: minmax(0, 1fr); }
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .float-card--a { inset-inline-start: 12px; }
+  .float-card--b { inset-inline-end: 12px; }
+  .split--rev > :first-child { order: 0; }
+  .bento { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-areas: "a a" "b c" "d d"; }
+  .mock-body { grid-template-columns: minmax(0, 1fr); }
+  .mock-side { display: none; }
+  .timeline::before { inset-inline-start: 9px; transform: none; }
+  [dir="rtl"] .timeline::before { transform: none; }
+  .t-item { grid-template-columns: minmax(0, 1fr); gap: 0; padding-inline-start: 40px; }
+  .t-item:nth-child(even) .t-card, .t-card { grid-column: 1; }
+  .t-dot, [dir="rtl"] .t-dot { inset-inline-start: 0; transform: none; }
+  .close-grid { grid-template-columns: minmax(0, 1fr); }
+  .contact-grid { grid-template-columns: minmax(0, 1fr); }
+  .aside-card img { flex: none; aspect-ratio: 3 / 2; }
+}
+
+/* ---------- Small tablets & below (<= 899px) ---------- */
+@media (max-width: 899px) {
+  .strip { grid-template-columns: minmax(0, 1fr); }
+  .strip-item + .strip-item { border-inline-start: 0; border-top: 1px solid var(--border); }
+}
+
+/* ---------- Phones ---------- */
+@media (max-width: 599px) {
+  :root { --header-h: 68px; --hero-h: 340px; }
+  .hero-v2 { padding-block: clamp(24px, 4vh, 40px); }
+  .hero-2 { padding-block: clamp(24px, 4vh, 40px); }
+  .hero-strip { margin-top: clamp(20px, 3vh, 32px); }
+  .strip-item { padding: 14px 18px; }
+  .strip-item h3 { font-size: 1rem; }
+  .strip-item p { font-size: .88rem; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: minmax(0, 1fr); }
+  .footer-grid { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .card { padding: 22px; }
+  .hero-actions .btn, .cta-actions .btn { width: 100%; }
+  .stats { grid-template-columns: minmax(0, 1fr); }
+  .float-card { position: static; margin-top: 12px; }
+  .bento { grid-template-columns: minmax(0, 1fr); grid-template-areas: "a" "b" "c" "d"; }
+  .compare { grid-template-columns: minmax(0, 1fr); }
+  .form-grid { grid-template-columns: minmax(0, 1fr); }
+  .form-actions .btn { width: 100%; }
+  .compare-table th, .compare-table td { padding: 12px 14px; }
+  .price-card { padding: 28px 22px; }
+  .compare .panel { padding: 24px; }
+  .mock-tiles { grid-template-columns: minmax(0, 1fr); }
+  .mock-row { grid-template-columns: minmax(0, 1fr) auto; }
+  .mock-row .meter { grid-column: 1 / -1; order: 3; }
+  .mock-main { padding: 16px; }
+  .hero-visual { display: block; }
+}
+
+/* ---------- Very small (down to 200px) ---------- */
+@media (max-width: 359px) {
+  :root { --gutter: 12px; --hero-h: 460px; }
+  .brand { font-size: 1.1rem; gap: 6px; }
+  .brand-mark { width: 32px; height: 32px; }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.35rem; }
+  .btn-lg { padding-inline: 14px; }
+  .btn { white-space: normal; text-align: center; line-height: 1.2; height: auto; min-height: var(--btn-h); padding-block: 8px; }
+}
+@media (max-width: 249px) {
+  :root { --hero-h: 640px; }
+  .brand-text { display: none; }
+}
+
+/* ---------- Large screens ---------- */
+@media (min-width: 1920px) {
+  :root { --container: 1360px; }
+}
+@media (min-width: 2400px) {
+  html { font-size: 18px; }
+  :root { --container: 1560px; }
+}
+
+/* ---------- Login: single column when two halves would be too narrow ---------- */
+@media (max-width: 899px) {
+  .auth-split { grid-template-columns: minmax(0, 1fr); min-height: 0; }
+  .auth-visual { padding: 28px var(--gutter); }
+  .auth-visual .checklist { display: none; }
+  .auth-visual p { margin-bottom: 0; }
+  .auth-panel { padding: 32px var(--gutter) 48px; }
+}
+
+/* ---------- Dashboard: tablet mode = horizontal scrolling menu, max 2 cards per row ---------- */
+@media (max-width: 1199px), (hover: none) and (pointer: coarse) and (max-width: 1366px) {
+  .dash-shell { grid-template-columns: minmax(0, 1fr); min-height: 0; }
+  .dash-side { position: static; height: auto; flex-direction: row; align-items: center; overflow-x: auto; overflow-y: hidden; padding: 8px var(--gutter); border-inline-end: 0; border-bottom: 1px solid var(--border); }
+  .side-nav { display: flex; gap: 6px; flex-wrap: nowrap; }
+  .side-label, .side-logout-wrap { display: none; }
+  .side-link { flex: none; width: auto; border-inline-start-width: 0; border-bottom: 3px solid transparent; border-radius: 10px 10px 4px 4px; }
+  .side-link.is-active { border-bottom-color: var(--primary-text); }
+  .dash-cols, .dash-cols--wide { grid-template-columns: minmax(0, 1fr); }
+  .profile-text { display: none; }
+  .logout-btn { width: var(--btn-h); padding: 0; }
+  .logout-btn .logout-text { display: none; }
+}
+@media (max-width: 599px) {
+  .panel { padding: 18px; }
+  .bars { gap: 6px; }
+  .bar-track { height: 150px; }
+  .panel-head .btn { width: 100%; }
+  .kpi-value { font-size: 1.7rem; }
+}
+@media (max-width: 439px) {
+  .dash-header .brand-text { display: none; }
+}
+@media (max-width: 299px) {
+  .dash-actions { gap: 6px; }
+  .dash-actions .icon-btn, .dash-actions .logout-btn { width: 36px; height: 36px; min-height: 36px; }
+  .dash-actions .logout-btn { padding: 0; }
+  .dash-actions .avatar { width: 32px; height: 32px; font-size: .8rem; }
+  .profile { padding-inline: 0; }
+}
+
+@media (max-width: 599px) {
+  .data-table th, .data-table td { padding: 12px 10px; }
+}

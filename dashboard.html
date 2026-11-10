@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Overview — Classora Dashboard</title>
+  <meta name="robots" content="noindex">
+  <script>
+    (function () {
+      try {
+        var d = document.documentElement;
+        d.setAttribute('data-theme', localStorage.getItem('cl-theme') || 'light');
+        d.setAttribute('dir', localStorage.getItem('cl-dir') || 'ltr');
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%231d4ed8%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-page="dashboard" data-layout="dash">
+
+  <header class="site-header dash-header">
+    <div class="dash-nav">
+      <a class="brand" href="index.html" aria-label="Classora home"><span class="brand-mark"><span data-icon="cap"></span></span><span class="brand-text">Classora</span></a>
+      <div class="dash-actions">
+        <button type="button" class="icon-btn theme-toggle" data-theme-toggle><span data-icon="sun" data-icon-class="i-sun"></span><span data-icon="moon" data-icon-class="i-moon"></span></button>
+        <button type="button" class="icon-btn dir-toggle" data-dir-toggle aria-label="Toggle text direction" title="Toggle text direction"><span data-icon="rtl" data-icon-class="i-rtl"></span></button>
+        <div class="profile" role="group" aria-label="Signed in as School Admin">
+          <span class="avatar" aria-hidden="true">SA</span>
+          <span class="profile-text"><strong>School Admin</strong><small>Academic Year 2026&ndash;27</small></span>
+        </div>
+        <a class="btn btn-outline logout-btn" href="login.html" aria-label="Logout"><span data-icon="logout"></span><span class="logout-text">Logout</span></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="dash-shell">
+    <aside class="dash-side" aria-label="Dashboard navigation">
+      <div class="side-inner">
+      <nav class="side-nav">
+        <div class="side-label">Modules</div>
+        <a class="side-link is-active" href="#overview" data-view-link="overview"><span data-icon="grid"></span>Overview</a>
+        <a class="side-link" href="#attendance" data-view-link="attendance"><span data-icon="userCheck"></span>Attendance</a>
+        <a class="side-link" href="#fees" data-view-link="fees"><span data-icon="wallet"></span>Fees</a>
+        <a class="side-link" href="#timetable" data-view-link="timetable"><span data-icon="calendar"></span>Timetable</a>
+        <a class="side-link" href="#messages" data-view-link="messages"><span data-icon="chat"></span>Messages</a>
+      </nav>
+      <div class="side-logout-wrap">
+        <a class="side-link side-logout" href="login.html"><span data-icon="logout"></span>Logout</a>
+      </div>
+      </div>
+    </aside>
+
+    <main class="dash-main" id="main">
+      <div class="dash-top">
+        <h1 id="view-title" tabindex="-1">Overview</h1>
+        <p id="view-sub">A summary of attendance, fees and communication across the school.</p>
+      </div>
+
+      <!-- Overview -->
+      <section class="dash-view" data-view="overview" aria-label="Overview">
+        <div class="grid grid-4">
+          <article class="card kpi"><span class="kpi-label">Attendance today</span><span class="kpi-value">94%</span><span class="kpi-note">+2% vs last week</span></article>
+          <article class="card kpi"><span class="kpi-label">Fees collected</span><span class="kpi-value">78%</span><span class="kpi-note">Of total due this term</span></article>
+          <article class="card kpi"><span class="kpi-label">Pending dues</span><span class="kpi-value">23</span><span class="kpi-note">Students with unpaid fees</span></article>
+          <article class="card kpi"><span class="kpi-label">Notices sent</span><span class="kpi-value">12</span><span class="kpi-note">This month</span></article>
+        </div>
+
+        <div class="dash-cols dash-cols--wide">
+          <div class="panel">
+            <div class="panel-head"><h2>Weekly attendance</h2><p>Percent present</p></div>
+            <div class="bar-chart" role="img" aria-label="Weekly attendance, percent present: Monday 96, Tuesday 94, Wednesday 91, Thursday 95, Friday 94">
+              <div class="bars">
+                <div class="bar-col"><span class="bar-val">96%</span><div class="bar-track"><div class="bar-fill" style="height:96%"></div></div><span class="bar-lab">Mon</span></div>
+                <div class="bar-col"><span class="bar-val">94%</span><div class="bar-track"><div class="bar-fill" style="height:94%"></div></div><span class="bar-lab">Tue</span></div>
+                <div class="bar-col"><span class="bar-val">91%</span><div class="bar-track"><div class="bar-fill" style="height:91%"></div></div><span class="bar-lab">Wed</span></div>
+                <div class="bar-col"><span class="bar-val">95%</span><div class="bar-track"><div class="bar-fill" style="height:95%"></div></div><span class="bar-lab">Thu</span></div>
+                <div class="bar-col"><span class="bar-val">94%</span><div class="bar-track"><div class="bar-fill" style="height:94%"></div></div><span class="bar-lab">Fri</span></div>
+              </div>
+            </div>
+            <p class="chart-note">Weekly attendance, Monday to Friday.</p>
+          </div>
+          <div class="panel panel--fill">
+            <div class="panel-head"><h2>Fee collection</h2><p>This term</p></div>
+            <div class="donut-wrap">
+              <svg class="donut" viewBox="0 0 120 120" role="img" aria-label="Fee collection: 78 percent collected, 15 percent pending, 7 percent overdue">
+                <circle cx="60" cy="60" r="48" fill="none" stroke="var(--border)" stroke-width="14"/>
+                <circle cx="60" cy="60" r="48" fill="none" stroke="var(--chart-2)" stroke-width="14" stroke-dasharray="235.24 301.59" stroke-dashoffset="0" transform="rotate(-90 60 60)"/>
+                <circle cx="60" cy="60" r="48" fill="none" stroke="var(--chart-3)" stroke-width="14" stroke-dasharray="45.24 301.59" stroke-dashoffset="-235.24" transform="rotate(-90 60 60)"/>
+                <circle cx="60" cy="60" r="48" fill="none" stroke="var(--chart-4)" stroke-width="14" stroke-dasharray="21.11 301.59" stroke-dashoffset="-280.48" transform="rotate(-90 60 60)"/>
+                <text class="t-main" x="60" y="58" text-anchor="middle">78%</text>
+                <text class="t-sub" x="60" y="72" text-anchor="middle">collected</text>
+              </svg>
+              <ul class="legend">
+                <li><i style="background:var(--chart-2)"></i>Collected<span>78%</span></li>
+                <li><i style="background:var(--chart-3)"></i>Pending<span>15%</span></li>
+                <li><i style="background:var(--chart-4)"></i>Overdue<span>7%</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head"><h2>Recent announcements</h2><button type="button" class="btn btn-outline" data-goto="messages">Open Messages</button></div>
+          <div class="table-wrap" tabindex="0" role="region" aria-label="Recent announcements table">
+            <table class="data-table">
+              <thead><tr><th scope="col">Title</th><th scope="col">Audience</th><th scope="col">Date</th></tr></thead>
+              <tbody>
+                <tr><td>Fee reminder: Term 2</td><td class="muted">Class 6A parents</td><td class="muted">06 Nov 2026</td></tr>
+                <tr><td>Parent meeting schedule</td><td class="muted">All parents</td><td class="muted">03 Nov 2026</td></tr>
+                <tr><td>Holiday notice</td><td class="muted">All parents</td><td class="muted">29 Oct 2026</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="dash-cols">
+          <div class="panel">
+            <div class="panel-head"><h2>Recent activity</h2><p>Today</p></div>
+            <ul class="feed">
+              <li><span class="feed-dot"></span><div><strong>Attendance saved for Class 7B</strong><small>08:52 AM &middot; Mrs. Nair</small></div></li>
+              <li><span class="feed-dot"></span><div><strong>Fee received from Rohan P.</strong><small>09:30 AM &middot; &#8377;12,000 via UPI</small></div></li>
+              <li><span class="feed-dot"></span><div><strong>Timetable updated for Class 8C</strong><small>10:15 AM &middot; Mr. Iyer</small></div></li>
+              <li><span class="feed-dot"></span><div><strong>Parent meeting notice sent</strong><small>11:40 AM &middot; All parents</small></div></li>
+            </ul>
+          </div>
+          <div class="panel">
+            <div class="panel-head"><h2>Upcoming events</h2><p>Next 2 weeks</p></div>
+            <ul class="feed">
+              <li><span class="feed-date">12<small>Nov</small></span><div><strong>Parent&ndash;teacher meeting</strong><small>Classes 6&ndash;8 &middot; 10:00 AM</small></div></li>
+              <li><span class="feed-date">15<small>Nov</small></span><div><strong>Term 2 fee due date</strong><small>All classes</small></div></li>
+              <li><span class="feed-date">20<small>Nov</small></span><div><strong>Annual sports day</strong><small>School ground &middot; 9:00 AM</small></div></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Attendance -->
+      <section class="dash-view" data-view="attendance" aria-label="Attendance" hidden>
+        <div class="grid grid-3">
+          <article class="card kpi"><span class="kpi-label">Present</span><span class="kpi-value" data-count="present">0</span><span class="kpi-note">Class 6A &middot; 8 students</span></article>
+          <article class="card kpi"><span class="kpi-label">Absent</span><span class="kpi-value" data-count="absent">0</span><span class="kpi-note">Updates as you change a status</span></article>
+          <article class="card kpi"><span class="kpi-label">Late</span><span class="kpi-value" data-count="late">0</span><span class="kpi-note">Updates as you change a status</span></article>
+        </div>
+        <div class="toolbar">
+          <div class="chip-group" role="group" aria-label="Class">
+            <span class="chip is-on">Class 6A</span><span class="chip">Class 7B</span><span class="chip">Class 8C</span><span class="chip">Class 9A</span>
+          </div>
+          <div class="toolbar-right"><span class="date-pill">Mon, 9 Nov 2026</span><button type="button" class="btn btn-outline" data-mark-all>Mark all present</button></div>
+        </div>
+        <div class="dash-cols dash-cols--wide">
+        <div class="stack">
+        <div class="panel">
+          <div class="panel-head"><h2>Class 6A attendance</h2><button type="button" class="btn btn-primary" data-action-msg="Attendance for Class 6A has been saved.">Save attendance</button></div>
+          <div class="table-wrap" tabindex="0" role="region" aria-label="Class 6A attendance table">
+            <table class="data-table data-table--compact">
+              <thead><tr><th scope="col">Roll</th><th scope="col">Student</th><th scope="col">Status</th></tr></thead>
+              <tbody>
+                <tr><td class="muted">01</td><td>Aarav S.</td><td><select class="att-select select-sm" aria-label="Attendance for Aarav S."><option value="present" selected>Present</option><option value="absent">Absent</option><option value="late">Late</option></select></td></tr>
+                <tr><td class="muted">02</td><td>Meera K.</td><td><select class="att-select select-sm" aria-label="Attendance for Meera K."><option value="present" selected>Present</option><option value="absent">Absent</option><option value="late">Late</option></select></td></tr>
+                <tr><td class="muted">03</td><td>Rohan P.</td><td><select class="att-select select-sm" aria-label="Attendance for Rohan P."><option value="present">Present</option><option value="absent" selected>Absent</option><option value="late">Late</option></select></td></tr>
+                <tr><td class="muted">04</td><td>Ananya D.</td><td><select class="att-select select-sm" aria-label="Attendance for Ananya D."><option value="present" selected>Present</option><option value="absent">Absent</option><option value="late">Late</option></select></td></tr>
+                <tr><td class="muted">05</td><td>Kabir M.</td><td><select class="att-select select-sm" aria-label="Attendance for Kabir M."><option value="present">Present</option><option value="absent">Absent</option><option value="late" selected>Late</option></select></td></tr>
+                <tr><td class="muted">06</td><td>Isha R.</td><td><select class="att-select select-sm" aria-label="Attendance for Isha R."><option value="present" selected>Present</option><option value="absent">Absent</option><option value="late">Late</option></select></td></tr>
+                <tr><td class="muted">07</td><td>Vihaan T.</td><td><select class="att-select select-sm" aria-label="Attendance for Vihaan T."><option value="present" selected>Present</option><option value="absent">Absent</option><option value="late">Late</option></select></td></tr>
+                <tr><td class="muted">08</td><td>Diya N.</td><td><select class="att-select select-sm" aria-label="Attendance for Diya N."><option value="present" selected>Present</option><option value="absent">Absent</option><option value="late">Late</option></select></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="form-status" role="status" aria-live="polite" hidden><span class="status-text"></span></div>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><h2>Last 10 school days</h2><p>School-wide percent present</p></div>
+          <div class="spark" role="img" aria-label="School-wide attendance over the last 10 school days, between 89 and 96 percent">
+            <i style="height:92%"></i><i style="height:94%"></i><i style="height:90%"></i><i style="height:95%"></i><i style="height:96%"></i><i style="height:91%"></i><i style="height:89%"></i><i style="height:94%"></i><i style="height:95%"></i><i style="height:94%"></i>
+          </div>
+          <p class="chart-note">Average 93.0% &middot; best day 96% &middot; lowest day 89%.</p>
+        </div>
+        </div>
+        <div class="stack">
+          <div class="panel">
+            <div class="panel-head"><h2>Class-wise today</h2><p>Percent present</p></div>
+            <ul class="meters">
+              <li><span>Class 6A</span><div class="meter"><i style="width:94%"></i></div><b>94%</b></li>
+              <li><span>Class 7B</span><div class="meter"><i style="width:95%"></i></div><b>95%</b></li>
+              <li><span>Class 8C</span><div class="meter"><i style="width:89%"></i></div><b>89%</b></li>
+              <li><span>Class 9A</span><div class="meter"><i style="width:92%"></i></div><b>92%</b></li>
+              <li><span>Class 10B</span><div class="meter"><i style="width:97%"></i></div><b>97%</b></li>
+            </ul>
+          </div>
+          <div class="panel">
+            <div class="panel-head"><h2>Needs follow-up</h2><p>Absent or late today</p></div>
+            <ul class="feed">
+              <li><span class="avatar avatar--sm" aria-hidden="true">RP</span><div><strong>Rohan P.</strong><small>Absent &middot; Parent not yet informed</small></div><button type="button" class="btn btn-outline btn-sm" data-action-msg="Parent of Rohan P. has been notified.">Notify</button></li>
+              <li><span class="avatar avatar--sm" aria-hidden="true">KM</span><div><strong>Kabir M.</strong><small>Late &middot; Arrived 09:20</small></div><button type="button" class="btn btn-outline btn-sm" data-action-msg="Parent of Kabir M. has been notified.">Notify</button></li>
+            </ul>
+            <div class="form-status" role="status" aria-live="polite" hidden><span class="status-text"></span></div>
+          </div>
+          <div class="panel">
+            <div class="panel-head"><h2>Leave requests</h2><p>Awaiting approval</p></div>
+            <ul class="feed">
+              <li><span class="avatar avatar--sm" aria-hidden="true">AD</span><div><strong>Ananya D.</strong><small>Class 6A &middot; 10 &ndash; 11 Nov &middot; Family function</small></div><button type="button" class="btn btn-outline btn-sm" data-action-msg="Leave approved for Ananya D.">Approve</button></li>
+              <li><span class="avatar avatar--sm" aria-hidden="true">IR</span><div><strong>Isha R.</strong><small>Class 8C &middot; 12 Nov &middot; Medical</small></div><button type="button" class="btn btn-outline btn-sm" data-action-msg="Leave approved for Isha R.">Approve</button></li>
+              <li><span class="avatar avatar--sm" aria-hidden="true">VT</span><div><strong>Vihaan T.</strong><small>Class 8C &middot; 14 Nov &middot; Sports event</small></div><button type="button" class="btn btn-outline btn-sm" data-action-msg="Leave approved for Vihaan T.">Approve</button></li>
+            </ul>
+            <div class="form-status" role="status" aria-live="polite" hidden><span class="status-text"></span></div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- Fees -->
+      <section class="dash-view" data-view="fees" aria-label="Fees" hidden>
+        <div class="grid grid-3">
+          <article class="card kpi"><span class="kpi-label">Collected</span><span class="kpi-value">&#8377;4,86,000</span><span class="kpi-note">78% of total due</span></article>
+          <article class="card kpi"><span class="kpi-label">Pending</span><span class="kpi-value">&#8377;93,000</span><span class="kpi-note">15% of total due</span></article>
+          <article class="card kpi"><span class="kpi-label">Overdue</span><span class="kpi-value">&#8377;43,000</span><span class="kpi-note">7% of total due</span></article>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><h2>Term 2 collection</h2><p>&#8377;6,22,000 due in total</p></div>
+          <div class="stackbar" role="img" aria-label="78 percent collected, 15 percent pending, 7 percent overdue"><i style="width:78%;background:var(--chart-2)"></i><i style="width:15%;background:var(--chart-3)"></i><i style="width:7%;background:var(--chart-4)"></i></div>
+          <ul class="legend legend--row"><li><i style="background:var(--chart-2)"></i>Collected<span>78%</span></li><li><i style="background:var(--chart-3)"></i>Pending<span>15%</span></li><li><i style="background:var(--chart-4)"></i>Overdue<span>7%</span></li></ul>
+        </div>
+        <div class="toolbar">
+          <div class="chip-group" data-filter-group="fee-table" role="group" aria-label="Filter fee records">
+            <button type="button" class="chip is-on" data-filter="all" aria-pressed="true">All</button><button type="button" class="chip" data-filter="paid" aria-pressed="false">Paid</button><button type="button" class="chip" data-filter="pending" aria-pressed="false">Pending</button><button type="button" class="chip" data-filter="overdue" aria-pressed="false">Overdue</button>
+          </div>
+          <div class="toolbar-right"><span class="date-pill">Term 2 &middot; 2026&ndash;27</span></div>
+        </div>
+        <div class="dash-cols dash-cols--wide">
+        <div class="stack">
+        <div class="panel">
+          <div class="panel-head"><h2>Fee records</h2><button type="button" class="btn btn-primary" data-action-msg="Fee reminders have been queued for all students with pending dues.">Send reminders</button></div>
+          <div class="table-wrap" tabindex="0" role="region" aria-label="Fee records table">
+            <table class="data-table" id="fee-table">
+              <thead><tr><th scope="col">Student</th><th scope="col">Class</th><th scope="col">Amount</th><th scope="col">Due date</th><th scope="col">Status</th></tr></thead>
+              <tbody>
+                <tr data-status="paid"><td>Aarav S.</td><td class="muted">6A</td><td>&#8377;12,000</td><td class="muted">15 Nov 2026</td><td><span class="badge badge--ok">Paid</span></td></tr>
+                <tr data-status="pending"><td>Meera K.</td><td class="muted">6A</td><td>&#8377;12,000</td><td class="muted">15 Nov 2026</td><td><span class="badge badge--warn">Pending</span></td></tr>
+                <tr data-status="overdue"><td>Rohan P.</td><td class="muted">6A</td><td>&#8377;12,000</td><td class="muted">31 Oct 2026</td><td><span class="badge badge--bad">Overdue</span></td></tr>
+                <tr data-status="paid"><td>Ananya D.</td><td class="muted">7B</td><td>&#8377;13,500</td><td class="muted">15 Nov 2026</td><td><span class="badge badge--ok">Paid</span></td></tr>
+                <tr data-status="pending"><td>Kabir M.</td><td class="muted">7B</td><td>&#8377;13,500</td><td class="muted">15 Nov 2026</td><td><span class="badge badge--warn">Pending</span></td></tr>
+                <tr data-status="overdue"><td>Isha R.</td><td class="muted">8C</td><td>&#8377;15,000</td><td class="muted">31 Oct 2026</td><td><span class="badge badge--bad">Overdue</span></td></tr>
+                <tr data-status="paid"><td>Vihaan T.</td><td class="muted">8C</td><td>&#8377;15,000</td><td class="muted">15 Nov 2026</td><td><span class="badge badge--ok">Paid</span></td></tr>
+                <tr data-status="paid"><td>Diya N.</td><td class="muted">9A</td><td>&#8377;16,500</td><td class="muted">15 Nov 2026</td><td><span class="badge badge--ok">Paid</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="chart-note">Showing 8 of 8 records.</p>
+          <div class="form-status" role="status" aria-live="polite" hidden><span class="status-text"></span></div>
+        </div>
+          <div class="panel">
+            <div class="panel-head"><h2>Upcoming dues</h2><p>Next 3 weeks</p></div>
+            <ul class="feed">
+              <li><span class="feed-date">15<small>Nov</small></span><div><strong>Term 2 instalment</strong><small>All classes &middot; &#8377;1,24,000 expected</small></div></li>
+              <li><span class="feed-date">30<small>Nov</small></span><div><strong>Transport fee</strong><small>Bus routes 1&ndash;4 &middot; &#8377;38,000</small></div></li>
+              <li><span class="feed-date">05<small>Dec</small></span><div><strong>Annual day contribution</strong><small>Classes 6&ndash;10 &middot; &#8377;22,500</small></div></li>
+            </ul>
+          </div>
+        </div>
+        <div class="stack">
+          <div class="panel">
+            <div class="panel-head"><h2>Collection by class</h2><p>Percent collected</p></div>
+            <ul class="meters">
+              <li><span>Class 6A</span><div class="meter"><i style="width:82%"></i></div><b>82%</b></li>
+              <li><span>Class 7B</span><div class="meter"><i style="width:76%"></i></div><b>76%</b></li>
+              <li><span>Class 8C</span><div class="meter"><i style="width:71%"></i></div><b>71%</b></li>
+              <li><span>Class 9A</span><div class="meter"><i style="width:84%"></i></div><b>84%</b></li>
+            </ul>
+          </div>
+          <div class="panel">
+            <div class="panel-head"><h2>How parents pay</h2><p>This term</p></div>
+            <ul class="meters">
+              <li><span>UPI</span><div class="meter"><i style="width:52%"></i></div><b>52%</b></li>
+              <li><span>Cards</span><div class="meter"><i style="width:21%"></i></div><b>21%</b></li>
+              <li><span>Net banking</span><div class="meter"><i style="width:17%"></i></div><b>17%</b></li>
+              <li><span>Cash</span><div class="meter"><i style="width:10%"></i></div><b>10%</b></li>
+            </ul>
+          </div>
+          <div class="panel">
+            <div class="panel-head"><h2>Recent payments</h2><p>Last 7 days</p></div>
+            <ul class="feed">
+              <li><span class="avatar avatar--sm" aria-hidden="true">AS</span><div><strong>Aarav S.</strong><small>&#8377;12,000 &middot; UPI &middot; 8 Nov</small></div><span class="badge badge--ok">Paid</span></li>
+              <li><span class="avatar avatar--sm" aria-hidden="true">AD</span><div><strong>Ananya D.</strong><small>&#8377;13,500 &middot; Card &middot; 7 Nov</small></div><span class="badge badge--ok">Paid</span></li>
+              <li><span class="avatar avatar--sm" aria-hidden="true">VT</span><div><strong>Vihaan T.</strong><small>&#8377;15,000 &middot; Net banking &middot; 5 Nov</small></div><span class="badge badge--ok">Paid</span></li>
+              <li><span class="avatar avatar--sm" aria-hidden="true">DN</span><div><strong>Diya N.</strong><small>&#8377;16,500 &middot; UPI &middot; 4 Nov</small></div><span class="badge badge--ok">Paid</span></li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- Timetable -->
+      <section class="dash-view" data-view="timetable" aria-label="Timetable" hidden>
+        <div class="panel">
+          <div class="panel-head"><h2>Class 6A weekly timetable</h2><p>Term 2 schedule</p></div>
+          <div class="table-wrap" tabindex="0" role="region" aria-label="Weekly timetable">
+            <table class="data-table tt">
+              <thead><tr><th scope="col">Time</th><th scope="col">Mon</th><th scope="col">Tue</th><th scope="col">Wed</th><th scope="col">Thu</th><th scope="col">Fri</th></tr></thead>
+              <tbody>
+                <tr><td>08:30</td><td>Mathematics</td><td>English</td><td>Science</td><td>Mathematics</td><td>History</td></tr>
+                <tr><td>09:20</td><td>English</td><td>Science</td><td>Mathematics</td><td>Art</td><td>English</td></tr>
+                <tr><td>10:10</td><td>Science</td><td>History</td><td>English</td><td>Science</td><td>Mathematics</td></tr>
+                <tr class="break"><td>11:00</td><td colspan="5">Break</td></tr>
+                <tr><td>11:30</td><td>History</td><td>Mathematics</td><td>Computer Lab</td><td>English</td><td>Science</td></tr>
+                <tr><td>12:20</td><td>Physical Ed.</td><td>Art</td><td>History</td><td>Mathematics</td><td>Library</td></tr>
+                <tr><td>13:10</td><td>Library</td><td>Physical Ed.</td><td>Art</td><td>Computer Lab</td><td>Physical Ed.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Messages -->
+      <section class="dash-view" data-view="messages" aria-label="Messages" hidden>
+        <div class="dash-cols">
+          <div class="panel">
+            <div class="panel-head"><h2>New announcement</h2></div>
+            <form data-form data-ok="Announcement sent to parents of the selected class." novalidate>
+              <div class="form-grid">
+                <div class="field field--full">
+                  <label for="m-aud">Audience <span class="req" aria-hidden="true">*</span></label>
+                  <select id="m-aud" name="audience" required>
+                    <option value="">Select audience</option>
+                    <option>All parents</option>
+                    <option>Class 6A parents</option>
+                    <option>Class 7B parents</option>
+                    <option>Class 8C parents</option>
+                  </select>
+                  <span class="field-error" role="alert"></span>
+                </div>
+                <div class="field field--full">
+                  <label for="m-sub">Subject <span class="req" aria-hidden="true">*</span></label>
+                  <input id="m-sub" name="subject" type="text" placeholder="Announcement subject" required>
+                  <span class="field-error" role="alert"></span>
+                </div>
+                <div class="field field--full">
+                  <label for="m-msg">Message <span class="req" aria-hidden="true">*</span></label>
+                  <textarea id="m-msg" name="message" placeholder="Write your message to parents" required></textarea>
+                  <span class="field-error" role="alert"></span>
+                </div>
+              </div>
+              <div class="form-actions"><button type="submit" class="btn btn-primary">Send announcement</button></div>
+              <div class="form-status" role="status" aria-live="polite" hidden><span class="status-text"></span></div>
+            </form>
+          </div>
+          <div class="panel">
+            <div class="panel-head"><h2>Recent announcements</h2><p>Last 7 days</p></div>
+            <div class="table-wrap" tabindex="0" role="region" aria-label="Recent announcements table">
+              <table class="data-table">
+                <thead><tr><th scope="col">Title</th><th scope="col">Audience</th><th scope="col">Date</th></tr></thead>
+                <tbody>
+                  <tr><td>Fee reminder: Term 2</td><td class="muted">Class 6A parents</td><td class="muted">06 Nov 2026</td></tr>
+                  <tr><td>Parent meeting schedule</td><td class="muted">All parents</td><td class="muted">03 Nov 2026</td></tr>
+                  <tr><td>Holiday notice</td><td class="muted">All parents</td><td class="muted">29 Oct 2026</td></tr>
+                  <tr><td>Sports day details</td><td class="muted">Class 8C parents</td><td class="muted">22 Oct 2026</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
