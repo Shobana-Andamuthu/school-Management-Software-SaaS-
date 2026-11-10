@@ -106,15 +106,17 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .icon-btn {
   display: inline-flex; align-items: center; justify-content: center;
   width: var(--btn-h); height: var(--btn-h); flex: none;
+  padding: 0; margin: 0; line-height: 0;
   border: 2px solid var(--border); background: var(--surface); color: var(--text);
   border-radius: var(--radius-sm); font-size: 13px; font-weight: 700;
   transition: border-color .2s, background-color .2s;
 }
 .icon-btn:hover { border-color: var(--primary-text); }
-.icon-btn .icon { width: 20px; height: 20px; }
-.theme-toggle .i-moon { display: none; }
-html[data-theme="dark"] .theme-toggle .i-sun { display: none; }
-html[data-theme="dark"] .theme-toggle .i-moon { display: block; }
+.icon-btn .icon { width: 20px; height: 20px; display: block; margin: auto; }
+.icon-btn > span { display: contents; }
+.theme-toggle .i-moon { display: none !important; }
+html[data-theme="dark"] .theme-toggle .i-sun { display: none !important; }
+html[data-theme="dark"] .theme-toggle .i-moon { display: block !important; }
 
 /* ---------- Header / navbar ---------- */
 .site-header {
